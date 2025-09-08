@@ -1,0 +1,6 @@
+node_modules
+dist
+coverage
+build
+cypress.config.cjs
+eslint.config.cjs

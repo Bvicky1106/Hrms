@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 210mm;
+  }
+
+  #invoice-content {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    transform: scale(0.94);
+    transform-origin: top left;
+    width: calc(100% / 0.94);
+  }
+
+  .print\:hidden,
+  .print\\:hidden {
+    display: none !important;
+  }
+
+  table,
+  tr,
+  td,
+  th {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
